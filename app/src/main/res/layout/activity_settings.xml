@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="66dp"
+        android:src="@drawable/ic_person_black_24dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_marginStart="-68dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_marginStart="-68dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+        android:hint="@string/status"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/updbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/profile_image"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:text="@string/update"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
